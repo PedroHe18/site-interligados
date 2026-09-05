@@ -82,6 +82,14 @@ header.rolado .logo {
     align-items: center;
 }
 
+#icon-pesquisa {
+    margin-left: 20px;
+}
+
+#icon-carrinho {
+    margin-right: 20px;
+}
+
 div.paragrafos_header {
     display: flex;
     justify-content: center;
