@@ -89,7 +89,7 @@ header.rolado .logo {
     margin-right: 20px;
 }
 
-div.paragrafos_header {
+nav.paragrafos_header {
     display: flex;
     justify-content: center;
     gap: 30px;

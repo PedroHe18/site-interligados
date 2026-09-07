@@ -81,7 +81,7 @@ header.rolado .logo {
     align-items: center;
 }
 
-div.paragrafos_header {
+nav.paragrafos_header {
     display: flex;
     justify-content: center;
     gap: 30px;
