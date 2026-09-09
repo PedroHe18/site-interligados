@@ -148,9 +148,10 @@ nav.categories ul {
     margin-bottom: 30px;
     gap: 10px;
 
-    list-style: none;
-
     justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+
     display: flex;
 }
 
