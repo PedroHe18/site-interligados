@@ -11,7 +11,7 @@
     <header class="header-container" id="meu-header">
         <div class="header-content">
             
-            <button class="icon-btn" aria-label="Pesquisar">
+            <button class="icon" aria-label="Pesquisar">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" id="icon-pesquisa">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                 </svg>
@@ -22,16 +22,16 @@
             </div>
             
             <div class="header-actions">
-                <button class="icon-btn" aria-label="Perfil">
+                <button class="icon" aria-label="Perfil">
                     <a href="https://pedrohe18.github.io/site-interligados/Conta/" style="color: black;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" id="perfil">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                         </svg>
                     </a>
                 </button>
 
-                <button class="icon-btn" aria-label="Carrinho de compras">
+                <button class="icon" aria-label="Carrinho de compras">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" id="icon-carrinho">
                         <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
                     </svg>
@@ -40,14 +40,14 @@
         </div>
 
         <nav class="paragrafos_header">
-            <p class="p_header"><a href="https://pedrohe18.github.io/site-interligados/">Início</a></p>
-            <p class="p_header"><a href="#">Produtos</a></p>
-            <p class="p_header"><a href="https://pedrohe18.github.io/site-interligados/Contato/">Contato</a></p>
+            <p><a href="https://pedrohe18.github.io/site-interligados/">Início</a></p>
+            <p><a href="#">Produtos</a></p>
+            <p><a href="https://pedrohe18.github.io/site-interligados/Contato/">Contato</a></p>
         </nav>
         
     </header>
     
-    <main class="main-container">
+    <main>
         <div class="conteiner">
             <section class="alinhador">
                 <div class="espaçador">
@@ -55,24 +55,24 @@
                     <span class="separador">.</span>
                     <a class="atalho" href="#">Minha Conta</a>
                     <span class="separador">.</span>
-                    <span class="login">Mudar Minha Senha</span>
+                    <span>Mudar Minha Senha</span>
                 </div>
                 <h1>Criar senha</h1>
-                <p class="paragrafo-titulo">Vamos te enviar um e-mail para poder alterar a sua senha.</p>
+                <p class="titulo">Vamos te enviar um e-mail para poder alterar a sua senha.</p>
             </section>
         </div>
         <section>
             <div class="conteiner">
-                <div class="alinhador_contato">
-                    <div class="box_contato">
-                        <div class="form_contato">
+                <div class="alinhador_box">
+                    <div class="box">
+                        <div class="formulario">
 
-                            <label class="form-label" for="email">E-mail</label>
+                            <label class="form-email" for="email">E-mail</label>
                             <input type="email" id="email" class="form-control" autocorrect="off" autocapitalize="off" name="email" placeholder="ex.: seuemail@email.com.br">
 
                         </div>
 
-                        <button class="button-enviar" type="submit" value="Enviar" name="enviar">
+                        <button class="enviar" type="submit" value="Enviar" name="enviar">
                             
                             Enviar
 

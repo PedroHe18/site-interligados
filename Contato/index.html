@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="../imagens/Interligados1.png" type="image/x-icon">
     <title>Contato - Interligados Cabuçu</title>
 </head>
-<body class="corpo">
+<body>
     <header class="header-container" id="meu-header">
         <div class="header-content">
             <button class="icon-btn" aria-label="Pesquisar">
@@ -23,7 +23,7 @@
             <div class="header-actions">
                 <button class="icon-btn" aria-label="Perfil">
                     <a href="https://pedrohe18.github.io/site-interligados/Conta/" style="color: black;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" id="perfil">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                         </svg>
@@ -38,17 +38,17 @@
         </div>
 
         <nav class="paragrafos_header">
-            <p class="p_header"><a href="https://pedrohe18.github.io/site-interligados/">Início</a></p>
-            <p class="p_header"><a href="#">Produtos</a></p>
-            <p class="p_header"><a href="https://pedrohe18.github.io/site-interligados/Contato/">Contato</a></p>
+            <p><a href="https://pedrohe18.github.io/site-interligados/">Início</a></p>
+            <p><a href="#">Produtos</a></p>
+            <p><a href="https://pedrohe18.github.io/site-interligados/Contato/">Contato</a></p>
         </nav>
 
     </header>
-    <main class="main-container">
+    <main>
         <div class="conteiner">
             <section class="alinhador">
                 <div class="espaçador">
-                    <a class="início" href="https://pedrohe18.github.io/site-interligados/">Início</a>
+                    <a class="atalho" href="https://pedrohe18.github.io/site-interligados/">Início</a>
                     <span class="separador">.</span>
                     <span class="Contato">Contato</span>
                 </div>
@@ -57,36 +57,36 @@
         </div>
         <section>
             <div class="conteiner">
-                <div class="alinhador_contato">
-                    <div class="box_contato">
-                        <div class="form_contato">
+                <div class="alinhador_box">
+                    <div class="box">
+                        <div class="formulario">
 
                             <label class="form-label" for="name">Nome</label>
                             <input type="text" id="name" class="form-control" autocorrect="off" autocapitalize="off" name="name" placeholder="ex.: Maria Perez">
 
                         </div>
-                        <div class="form_contato">
+                        <div class="formulario">
 
-                            <label class="form-label" for="email">E-mail</label>
+                            <label for="email">E-mail</label>
                             <input type="email" id="email" class="form-control" autocorrect="off" autocapitalize="off" name="email" placeholder="ex.: seuemail@email.com.br">
 
                         </div>
-                        <div class="form_contato">
+                        <div class="formulario">
 
-                            <label class="form-label" for="phone">Telefone</label>
+                            <label for="phone">Telefone</label>
                             <input type="tel" id="phone" class="form-control" autocorrect="off" autocapitalize="off" name="phone" placeholder="ex.: 21971923030">
 
                         </div>
-                        <div class="form_contato">
+                        <div>
 
-                            <label class="form-label" for="messagem">Mensagem</label>
-                            <textarea id="message" class="form-control form-massage" autocorrect="off" autocapitalize="off" name="massege" rows="7" placeholder="ex.: Sua mensagem"></textarea>
+                            <label for="messagem">Mensagem</label>
+                            <textarea class="form-control" autocorrect="off" autocapitalize="off" name="massege" rows="7" placeholder="ex.: Sua mensagem"></textarea>
 
                         </div>
                         <!--<div class="g-recaptcha">
                             Para o futuro recaptcha
                         </div>-->
-                        <button class="button-enviar" type="submit" value="Enviar" name="enviar">
+                        <button class="enviar" type="submit" value="Enviar" name="enviar">
                             
                             Enviar
 
