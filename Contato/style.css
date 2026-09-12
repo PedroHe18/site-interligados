@@ -198,7 +198,7 @@ input {
     width: 100%;
 }
 
-input::placeholder {
+.form-control::placeholder {
     color: #0000004b;
     font-size: 11px;
 }

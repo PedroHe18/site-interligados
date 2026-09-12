@@ -186,6 +186,7 @@ input {
 
     border-width: 1px;
     border-color: #0000003f;
+    box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.103);
 
     width: 100%;
 }
