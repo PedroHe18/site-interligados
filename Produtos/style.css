@@ -1,9 +1,10 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Kaushan+Script&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url("https://use.typekit.net/rzd6oly.css");
 
 @import url('https://googleapis.com');
-
 
 
 * {
@@ -137,27 +138,34 @@ main {
 }
 
 article {
+    padding-bottom: 70px;
 }
 
 section {
+    justify-content: center;
+    flex-direction: column;
     display: flex;
+}
+
+@media (min-width: 768px) {
+    .conteiner-compra {
+        flex-direction: row;
+    }
 }
 
 img.produto {
-    padding: 40px 0px 40px 20px;
-    border-right: 500px;
+    padding: 0px 20px 20px 20px;
 
+    width: 100%;
     height: auto;
-    max-width: 100%;
     
-    display: flex;
+    display: block;
 }
 
 h2 {
-    padding: 35px 0px 10px 0px;
-    padding-top: 35px;
+    padding: 45px 0px 10px 5px;
     border-bottom: solid;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 10px 20px 10px;
 
     font-family: "Work Sans", sans-serif;
     color: #6d4810;
@@ -170,11 +178,11 @@ h2 {
 
 div.info {
     padding-inline: 30px;
-    width: 100vh;
+    width: 100%;
 }
 
 p.valor {
-    padding: 16px 0px 12px 0px;
+    padding-block: 20px 12px;
 
     font-size: 1em;
     font-weight: 400;
@@ -188,22 +196,39 @@ p.parcela {
 }
 
 div.box-comprar {
-    padding-top: 40px;
-    text-align: center;
+    padding-block: 20px 10px;
+    width: 100%;
+    display: flex;
 }
 
 button.comprar {
     padding: 10px;
-    padding-inline: 100px;
-
+    margin-right: 3px;
+    justify-content: center;
+    width: 36%;
     border: none;
     border-radius: 1px;
     background-color: #c99d5b;
     color: #fff;
+    cursor: pointer;
+}
+
+button.icon-carrinho {
+    background-color: #c99d5b;
+    border: none;
+    align-items: center;
+    color: #fff;
+
+    display: flex;
+    cursor: pointer;
+}
+
+#carrinho {
+    margin-inline: 10px;
 }
 
 p.ende {
-    padding: 40px 0px 10px 0px;
+    padding-block: 10px;
 
     font-family: sans-serif;
     font-size: 0.7em;
@@ -212,12 +237,13 @@ p.ende {
 input {
     border: solid 1px #0000004b;
     border-radius: 1px;
-    width: 100%;
+    text-indent: 14px;
+    width: 16rem;
     height: 40px;
 }
 
 input::placeholder {
-    padding: 16px;
+    text-indent: 14px;
     color: #0000004b;
 }
 
@@ -234,6 +260,7 @@ div.descricao {
 }
 
 div.descricao p {
+    padding-bottom: 8px;
 }
 
 footer {
