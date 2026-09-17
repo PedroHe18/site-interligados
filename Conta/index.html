@@ -31,7 +31,7 @@
                     </a>
                 </button>
 
-                <button class="icon-btn" aria-label="Carrinho de compras">
+                <button class="icon-btn" id="btn-carrinho" aria-label="Carrinho de compras">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" id="icon-carrinho">
                         <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
                     </svg>
@@ -46,6 +46,37 @@
         </nav>
         
     </header>
+
+    <aside class="carrinho-sidebar" id="carrinho-sidebar">
+        <div class="carrinho-header">
+            <h2>Meu carrinho</h2>
+
+            <button id="fechar-carrinho" aria-label="Fechar carrinho">
+                &times;
+            </button>
+        </div>
+
+        <div class="carrinho-produtos">
+            
+            <div class="carrinho-vazio">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+
+        </div>
+
+        <div class="carrinho-footer">
+
+            <div class="carrinho-total">
+                <span>Total:</span>
+                <strong>R$ 0,00</strong>
+            </div>
+
+            <button class="btn-finalizar">
+                Finalizar compra
+            </button>
+
+        </div>
+    </aside>
     
     <main>
         <div>
