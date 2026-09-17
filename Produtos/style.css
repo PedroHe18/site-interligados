@@ -275,7 +275,7 @@ img.produto {
     display: block;
 }
 
-h2 {
+article > h2 {
     padding: 45px 0px 10px 5px;
     border-bottom: solid;
     margin: 20px 10px 20px 10px;
