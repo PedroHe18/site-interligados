@@ -254,27 +254,6 @@ article {
     padding-bottom: 70px;
 }
 
-section {
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-}
-
-@media (min-width: 768px) {
-    .conteiner-compra {
-        flex-direction: row;
-    }
-}
-
-img.produto {
-    padding: 0px 20px 20px 20px;
-
-    width: 100%;
-    height: auto;
-    
-    display: block;
-}
-
 h2.nome-produto {
     padding: 45px 0px 10px 5px;
     border-bottom: solid;
@@ -289,8 +268,66 @@ h2.nome-produto {
     font-size: 1.11em;
 }
 
+section {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .conteiner-compra {
+        flex-direction: row;
+    }
+}
+
+/* ------------------------- Local de imagens ------------------------- */
+
+div.local-imagens {
+    padding: 5px;
+    gap: 10px;
+    display: block;
+    width: 100%;
+}
+
+img.produto {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+    width: 100%;
+
+    cursor: pointer;
+}
+
+.produto:hover {
+    padding: 6px;
+    transition: 0.2s;
+}
+
+div.miniaturas {
+    width: 100%;
+    display: flex;
+}
+
+img.thumb {
+    padding: 5px;
+    border: 1px solid #ddd;
+    width: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.thumb:hover, .thumb.active {
+    padding: 3px;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+
+/* ------------------------- Local de compra ------------------------- */
+
 div.info {
-    padding-inline: 30px;
+    padding-inline: 20px 25px;
     width: 100%;
 }
 

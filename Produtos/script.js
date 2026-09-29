@@ -1,4 +1,4 @@
-//ampliar e diminuir logo do cabeçalho
+// Ampliar e diminuir logo do cabeçalho
 window.addEventListener('scroll', function() {
   const header = document.getElementById('meu-header');
   
@@ -9,7 +9,7 @@ window.addEventListener('scroll', function() {
   }
 })
 
-//Expandir menu da sacola
+// Expandir menu da sacola
 const btnCarrinho = document.getElementById('btn-carrinho')
 const carrinhoSidebar = document.getElementById('carrinho-sidebar')
 const fecharCarrinho = document.getElementById ('fechar-carrinho')
@@ -21,3 +21,13 @@ btnCarrinho.addEventListener('click', () => {
 fecharCarrinho.addEventListener('click', () => {
   carrinhoSidebar.classList.remove('aberto')
 })
+
+// Troca de imagens
+function mudarImagem(miniaturas) {
+  document.getElementById('img-zoom').src = miniaturas.src;
+
+  let thumbs = document.querySelectorAll('.thumb');
+  thumbs.forEach(t => t.classList.remove('active'));
+
+  miniaturas.classList.add('active');
+}
