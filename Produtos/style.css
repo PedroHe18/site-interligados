@@ -283,7 +283,7 @@ section {
 /* ------------------------- Local de imagens ------------------------- */
 
 div.local-imagens {
-    padding: 5px;
+    padding: 6px;
     gap: 10px;
     display: block;
     width: 100%;
@@ -328,7 +328,7 @@ img.thumb {
 /* ------------------------- Local de compra ------------------------- */
 
 div.info {
-    padding-inline: 20px 25px;
+    padding-inline: 17px 22px;
     width: 100%;
 }
 
