@@ -299,7 +299,7 @@ img.produto {
 }
 
 .produto:hover {
-    padding: 6px;
+    opacity: 0.8;
     transition: 0.2s;
 }
 
