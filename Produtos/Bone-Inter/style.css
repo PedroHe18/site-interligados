@@ -417,6 +417,11 @@ div.descricao {
     font-size: 0.79em;
 }
 
+p#text-descricao {
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+
 div.descricao p {
     padding-bottom: 8px;
 }

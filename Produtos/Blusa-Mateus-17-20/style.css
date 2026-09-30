@@ -283,15 +283,6 @@ section {
 
 /* ------------------------- Local de imagens ------------------------- */
 
-div.local-imagens {
-    padding: 6px;
-    gap: 10px;
-    
-    width: 100%;
-    
-    display: block;
-}
-
 img.produto {
     border: 1px solid #ddd;
     padding: 8px;
@@ -411,9 +402,15 @@ a.link-cep {
 
 div.descricao {
     padding-top: 50px;
+    line-height: 1.25em;
 
     font-family: sans-serif;
     font-size: 0.79em;
+}
+
+p#text-descricao {
+    font-size: 1.2em;
+    padding-bottom: 20px;
 }
 
 div.descricao p {
