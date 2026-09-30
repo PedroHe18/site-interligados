@@ -271,6 +271,7 @@ h2.nome-produto {
 section {
     justify-content: center;
     flex-direction: column;
+
     display: flex;
 }
 
@@ -285,8 +286,10 @@ section {
 div.local-imagens {
     padding: 6px;
     gap: 10px;
-    display: block;
+    
     width: 100%;
+    
+    display: block;
 }
 
 img.produto {
@@ -312,14 +315,17 @@ div.miniaturas {
 img.thumb {
     padding: 5px;
     border: 1px solid #ddd;
+
     width: 80px;
     object-fit: cover;
+
     cursor: pointer;
     transition: 0.3s;
 }
 
 .thumb:hover, .thumb.active {
     padding: 3px;
+
     opacity: 0.8;
     transition: 0.2s;
 }
