@@ -24,10 +24,23 @@ fecharCarrinho.addEventListener('click', () => {
 
 // Troca de imagens
 function mudarImagem(miniaturas) {
-  document.getElementById('img-zoom').src = miniaturas.src;
+  const imgZoom = document.getElementById('img-zoom');
+
+  if (imgZoom.src === miniaturas.src) return;
 
   let thumbs = document.querySelectorAll('.thumb');
   thumbs.forEach(t => t.classList.remove('active'));
-
   miniaturas.classList.add('active');
+
+  imgZoom.classList.add('saindo');
+  
+  setTimeout(() => {
+    imgZoom.src = miniaturas.src;
+    imgZoom.classList.remove('saindo');
+    imgZoom.classList.add('entrando');
+
+    setTimeout(() => {
+      imgZoom.classList.remove('entrando');
+    }, 20);
+  }, 250);
 }
