@@ -9,13 +9,14 @@
 
 body {
     padding-top: 175px;
-    background-color: #ffffff13;
+
     font-family: 'Cabin', 'Segoe UI', sans-serif;
+    background-color: #ffffff13;
 }
 
 header {
     padding: 20px 0 0 0;
-    
+
     position: fixed;
     top: 0;
     left: 0;
@@ -29,6 +30,7 @@ header {
 
 .header-container {
     flex-direction: column;
+
     max-width: 958px;
     margin: 0 auto;
     width: 100%;
@@ -44,11 +46,18 @@ header.rolado {
 
 header .logo {
     width: 80px;
-    transition: width 0.3s ease;
+    transition: 0.3s ease;
 }
 
 header.rolado .logo {
     width: 45px;
+    transition: 0.3s;
+}
+
+header.rolado svg {
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
 }
 
 div.header-content {
@@ -61,24 +70,17 @@ div.header-content {
 }
 
 div.logo-container {
-    padding-left: 3.7rem;
-    
     text-align: center;
     flex-grow: 1;
 }
 
 img.logo {
     height: auto;
-    
+
     border-radius: 50%;
     box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.514);
 
     cursor: pointer;
-}
-
-.header-actions {
-    gap: 30px;
-    display: flex;
 }
 
 button.icon-btn {
@@ -90,20 +92,20 @@ button.icon-btn {
     display: flex;
 }
 
-svg {
-    cursor: pointer;
-}
-
-svg#icon-pesquisa {
+button.icon-btn a {
+    margin-top: 5px;
     margin-left: 20px;
 }
 
-svg#perfil {
-    margin-top: 5px;
+button svg {
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
 }
 
 svg#icon-carrinho {
     margin-right: 20px;
+    cursor: pointer;
 }
 
 nav.paragrafos_header {
@@ -123,26 +125,6 @@ a {
 
 header.rolado div.paragrafos_header {
     padding: 15px;
-}
-
-a.atalho:hover {
-    color: #00000069;
-    transition: 0.3s;
-}
-
-span {
-    padding-inline: 1px;
-}
-
-section.alinhador {
-    padding-block: 24px;
-
-    text-align: center;
-    font-size: 10px;
-}
-
-.espaçador {
-    padding-bottom: 1rem;
 }
 
 section h1 {
@@ -173,7 +155,7 @@ aside.carrinho-sidebar {
 
     box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.219);
 
-    transform: translateX(100%);
+    transform: translateX(105%);
 
     transition: transform 0.3s ease;
 }
@@ -266,46 +248,49 @@ button.btn-finalizar:hover {
 }
 
 main {
-    padding: 20px;
-
     margin: 0 auto;
     max-width: 958px;
+}
+
+section.alinhador {
+    padding-block: 24px;
+
+    text-align: center;
+    font-size: 10px;
+}
+
+div.espaçador {
+    padding-bottom: 1rem;
+}
+
+a.atalho:hover {
+    color: #00000069;
+    transition: 0.3s;
+}
+
+span {
+    padding-inline: 1px;
 }
 
 div.conteiner {
     margin: 0 auto;
     max-width: 1200px;
-    
+    padding-bottom: 180px;
 }
 
-p.titulo {
-    font-family:'Times New Roman', Times, serif;color: #332f29e0;
-    font-size: 13px;
-}
-
-div.alinhador_box {
+div.alinhador {
     justify-content: center !important;
     display: flex;
 }
 
 div.box {
-    width: 510px;
     padding-inline: 15px;
+    width: 510px;
 }
 
 div.formulario {
     margin-bottom: 20px;
     text-align: left;
-}
-
-label.form-email {
-    margin-bottom: 10px;
-    
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #332f29e0;
-    font-size: 12px;
-
-    display: block;
 }
 
 input {
@@ -323,14 +308,38 @@ input::placeholder {
     font-size: 11px;
 }
 
+label {
+    margin-bottom: 10px;
+
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #332f29e0;
+    font-size: 12px;
+
+    display: block;
+}
+
+nav.esqueceu-senha {
+    margin-block: 8px;
+
+    text-align: right;
+    font-size: 12px;
+}
+
+a.esqueceu {
+    margin-right: 4px;
+
+    color: #000000b6;
+    text-decoration: underline;
+}
+
 button.enviar {
     padding: 15px;
-    border: none;
-    border-radius: 5px;
 
     background-color: #e28e11;
     color: #382304;
-
+    border: none;
+    border-radius: 5px;
+    
     width: 100%;
     cursor: pointer;
 }
@@ -339,13 +348,9 @@ footer {
     padding: 2rem;
     padding-top: 3rem;
 
-    background-color: #505050b0;
     text-align: center;
+    background-color: #505050b0;
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.219);
-
-    bottom: 0;
-    width: 100%;
-    position: fixed;
 }
 
 p.insta {
@@ -357,11 +362,10 @@ p.insta {
 }
 
 div.paragrafos_footer {
-    padding-bottom: 2rem;
-    gap: 20px;
-    
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 2rem;
 }
 
 p.footer {

@@ -44,16 +44,23 @@ header.rolado {
 
 header .logo {
     width: 80px;
-    transition: width 0.3s ease;
+    transition: 0.3s ease;
 }
 
 header.rolado .logo {
     width: 45px;
+    transition: 0.3s;
+}
+
+header.rolado svg {
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
 }
 
 div.header-content {
     padding-bottom: 15px;
-    
+
     justify-content: space-between;
     align-items: center;
 
@@ -61,24 +68,17 @@ div.header-content {
 }
 
 div.logo-container {
-    padding-left: 3.7rem;
-
     text-align: center;
-    flex-grow: 100;
+    flex-grow: 1;
 }
 
 img.logo {
     height: auto;
-    
+
     border-radius: 50%;
     box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.514);
 
     cursor: pointer;
-}
-
-.header-actions {
-    gap: 30px;
-    display: flex;
 }
 
 button.icon-btn {
@@ -90,20 +90,20 @@ button.icon-btn {
     display: flex;
 }
 
-svg {
-    cursor: pointer;
-}
-
-svg#icon-pesquisa {
+button.icon-btn a {
+    margin-top: 5px;
     margin-left: 20px;
 }
 
-svg#perfil {
-    margin-top: 5px;
+button svg {
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
 }
 
 svg#icon-carrinho {
     margin-right: 20px;
+    cursor: pointer;
 }
 
 nav.paragrafos_header {
@@ -142,7 +142,7 @@ aside.carrinho-sidebar {
 
     box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.219);
 
-    transform: translateX(100%);
+    transform: translateX(105%);
 
     transition: transform 0.3s ease;
 }
