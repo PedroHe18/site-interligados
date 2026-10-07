@@ -278,10 +278,10 @@ div.header-box h1 {
 }
 
 .sec-pedidos, .sec-dados {
-    padding-block: 80px;
+    padding-block: 50px;
 }
 
-table.dados-box {
+.dados-box {
     margin-block: 30px;
     margin: auto;
     border-collapse: collapse;
