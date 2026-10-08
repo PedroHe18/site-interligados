@@ -396,7 +396,7 @@ p.ende {
     font-size: 0.7em;
 }
 
-input {
+input#cep {
     border: solid 1px #0000004b;
     border-radius: 1px;
     text-indent: 14px;
@@ -404,9 +404,21 @@ input {
     height: 40px;
 }
 
-input::placeholder {
+input#cep::placeholder {
     text-indent: 14px;
     color: #0000004b;
+}
+
+input#consultar {
+    padding: 12.5px 10px;
+    margin-left: 5px;
+
+    background-color: #c99d5b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
 }
 
 a.link-cep {

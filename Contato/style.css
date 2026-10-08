@@ -285,7 +285,7 @@ div.box {
     width: 510px;
 }
 
-div.formulario {
+form.formulario {
     margin-bottom: 20px;
     text-align: left;
 }
@@ -302,6 +302,7 @@ label {
 
 input {
     padding: 10px;
+    margin-bottom: 20px;
 
     border-width: 1px;
     border-color: #0000003f;
@@ -316,7 +317,7 @@ input {
 }
 
 textarea {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     border-width: 1px;
 
     border-color: #0000003f;
@@ -325,7 +326,7 @@ textarea {
     width: 100%;
 }
 
-button.enviar {
+input.enviar {
     padding: 15px;
 
     background-color: #e28e11;

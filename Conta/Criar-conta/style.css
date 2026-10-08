@@ -288,8 +288,7 @@ div.box {
     width: 510px;
 }
 
-div.formulario {
-    margin-bottom: 20px;
+form.formulario {
     text-align: left;
 }
 
@@ -301,6 +300,9 @@ input {
     box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.103);
 
     width: 100%;
+}
+input#email {
+    margin-bottom: 20px;
 }
 
 input::placeholder {
@@ -319,6 +321,7 @@ label {
 }
 
 nav.esqueceu-senha {
+    padding-bottom: 20px;
     margin-block: 8px;
 
     text-align: right;
@@ -332,7 +335,7 @@ a.esqueceu {
     text-decoration: underline;
 }
 
-button.enviar {
+input.enviar {
     padding: 15px;
 
     background-color: #e28e11;
