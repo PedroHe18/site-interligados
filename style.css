@@ -11,6 +11,13 @@
 
 
 
+@media screen and (max-width: 600px){
+    main {
+        width: 350px;
+    }
+}
+
+
 :root {
     --branco: #ffffff;
     --preto: #000;
@@ -125,20 +132,18 @@ button.icon-btn {
 }
 
 button.icon-btn a {
-    margin-top: 5px;
     margin-left: 20px;
 }
 
-button svg {
-    width: 25px;
-    height: 25px;
-    transition: 0.3s;
-}
-
-button #icon {
+button #icon-user {
     width: 25px;
     height: 25px;
     cursor: pointer;
+    transition: color 0.2s;
+}
+
+button #icon-user:hover {
+    color: var(--texto-claro);
 }
 
 svg#icon-carrinho {
@@ -146,6 +151,11 @@ svg#icon-carrinho {
     height: 25px;
     margin-right: 20px;
     cursor: pointer;
+    transition: color 0.2s;
+}
+
+svg#icon-carrinho:hover {
+    color: var(--texto-claro);
 }
 
 nav.paragrafos_header {
@@ -165,6 +175,11 @@ header.rolado .paragrafos_header {
 p > a {
     text-decoration: none;
     color: var(--texto-claro);
+    transition: color 0.2s;
+}
+
+p > a:hover {
+    color: #00000059;
 }
 
 header.rolado div.paragrafos_header {
@@ -290,7 +305,7 @@ button.btn-finalizar {
 
     cursor: pointer;
 
-    transition: 0.2s;
+    transition: background-color 0.2s;
 }
 
 button.btn-finalizar:hover {
@@ -302,12 +317,6 @@ button.btn-finalizar:hover {
         /* ------------------ Conteúdo Principal ------------------ */
 
 
-
-@media screen and (max-width: 600px){
-    main {
-        width: 350px;
-    }
-}
 
 main {
     padding: 20px;
