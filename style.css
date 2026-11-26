@@ -49,38 +49,35 @@ body {
 
 
 
-        /* ------------------ Cabeçalho ------------------ */
+    /* /////////////////////////////////////////////////////////////////
+                ------------------ Cabeçalho ------------------ 
+       ///////////////////////////////////////////////////////////////// */
 
 
 
-header {
-    padding: 20px 0 0 0;
+        /* ---- Cabeça/corpo do cabeçalho ---- */
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.alinhamento-cabecalho {
+    padding-top: 20px;
 
     position: fixed;
-    top: 0;
-    left: 0;
+    max-width: 958px;
     width: 100%;
-    z-index: 1000;
+    top: 0;
 
     background-color: var(--branco);
 
     transition: padding 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-.header-container {
-    flex-direction: column;
-    max-width: 958px;
-    margin: 0 auto;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    display: flex;
+    z-index: 5;
 }
 
 header.rolado {
-    padding: 5px 0px 0px 0px;
+    padding-top: 5px;
 }
 
 header .logo {
@@ -90,34 +87,21 @@ header .logo {
 
 header.rolado .logo {
     width: 45px;
-    transition: width 0.3s;
 }
 
-header.rolado svg {
-    width: 20px;
-    height: 20px;
-    transition: width 0.3s;
-}
-
-div.header-content {
+div.header-body {
+    display: flex;
     padding-bottom: 15px;
-
-    justify-content: space-between;
     align-items: center;
 
-    display: flex;
-}
-
-div.logo-container {
-    text-align: center;
-    flex-grow: 1;
+    justify-content: space-between;
 }
 
 img.logo {
     height: auto;
 
     border-radius: 50%;
-    box-shadow: 0px 2px 6px 1px var(--shadow);
+    box-shadow: -1px 1px 5px 1px var(--shadow);
 
     cursor: pointer;
 }
@@ -125,50 +109,53 @@ img.logo {
 button.icon-btn {
     background: none;
     border: none;
-    align-items: center;
     color: var(--preto);
 
     display: flex;
 }
 
-button.icon-btn a {
+.icon-btn a {
     margin-left: 20px;
+
+    color: black;
+}
+
+.icon-btn:hover, .icon-btn > a:hover {
+    color: var(--texto-claro);
 }
 
 button #icon-user {
     width: 25px;
     height: 25px;
+
     cursor: pointer;
     transition: color 0.2s;
 }
 
-button #icon-user:hover {
-    color: var(--texto-claro);
-}
+button #icon-carrinho {
+    margin-right: 20px;
 
-svg#icon-carrinho {
     width: 25px;
     height: 25px;
-    margin-right: 20px;
+
     cursor: pointer;
     transition: color 0.2s;
 }
 
-svg#icon-carrinho:hover {
-    color: var(--texto-claro);
-}
+        /* ---- Rodapé do cabeçalho ---- */
 
-nav.paragrafos_header {
+nav.header_foot {
+    display: flex;
+
     padding: 25px;
     gap: 30px;
 
     justify-content: center;
-    
+
     transition: padding 0.3s ease;
-    display: flex;
 }
 
-header.rolado .paragrafos_header {
+header.rolado .header_foot {
     padding: 10px;
 }
 
@@ -179,16 +166,18 @@ p > a {
 }
 
 p > a:hover {
-    color: #00000059;
+    color: var(--shadow-dark);
 }
 
-header.rolado div.paragrafos_header {
+header.rolado div.header_foot {
     padding: 15px;
 }
 
 
 
-        /* ------------------ Carrinho de compras ------------------ */
+    /* ///////////////////////////////////////////////////////////////// 
+        ------------------ Carrinho de compras ------------------ 
+       ///////////////////////////////////////////////////////////////// */
 
 
 
@@ -314,7 +303,9 @@ button.btn-finalizar:hover {
 
 
 
-        /* ------------------ Conteúdo Principal ------------------ */
+    /* /////////////////////////////////////////////////////////////////
+           ------------------ Conteúdo Principal ------------------ 
+       ///////////////////////////////////////////////////////////////// */
 
 
 
@@ -327,8 +318,8 @@ main {
 }
 
 p.welcome-menssage {
-    padding-top: 3rem;
-    padding-bottom: 7.5rem;
+    margin-top: 3rem;
+    margin-bottom: 7.5rem;
 
     text-align: center;
 }
@@ -454,7 +445,9 @@ p.product-price {
 
 
 
-        /* ------------------ Footer ------------------ */
+    /* /////////////////////////////////////////////////////////////////
+                ------------------ Footer ------------------
+       ///////////////////////////////////////////////////////////////// */
 
 
 
@@ -470,6 +463,15 @@ footer {
 
 nav.insta {
     padding-bottom: 40px;
+}
+
+nav.insta a {
+    color: var(--branco);
+    transition: color 0.2s;
+}
+
+nav.insta a:hover {
+    color: var(--shadow-dark);
 }
 
 nav.paragrafos_footer {
